@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validate Class Name</title>
+</head>
+<body>
+<script>
+    function validateClassName(str) {
+        regexp = /^[ACP][0-9]{4}[GHIKLM]$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    console.log(validateClassName('C0318G'));
+    console.log(validateClassName('M0318G#'));
+    console.log(validateClassName('P0323A'));
+    console.log(validateClassName('AC0318G'));
+    let name = prompt('Enter the Class Name: ');
+    console.log(validateClassName(name));
+</script>
+</body>
+</html>
